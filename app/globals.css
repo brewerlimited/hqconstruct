@@ -62,8 +62,8 @@ main {
   display: grid;
   grid-template-columns: minmax(230px, 1fr) auto auto;
   align-items: center;
-  min-height: 82px;
-  padding: 14px clamp(18px, 4vw, 54px);
+  min-height: 74px;
+  padding: 12px clamp(18px, 3.2vw, 42px);
   background: rgba(8, 10, 9, 0.88);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
@@ -137,11 +137,11 @@ nav a:hover,
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(380px, 0.78fr);
-  gap: clamp(28px, 5vw, 78px);
+  grid-template-columns: minmax(0, 0.96fr) minmax(380px, 0.9fr);
+  gap: clamp(28px, 4.4vw, 64px);
   align-items: end;
-  min-height: calc(100vh - 82px);
-  padding: clamp(48px, 7vw, 96px) clamp(18px, 4vw, 54px) 28px;
+  min-height: min(820px, calc(100vh - 74px));
+  padding: clamp(36px, 5.2vw, 72px) clamp(18px, 3.2vw, 42px) 26px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -167,19 +167,19 @@ p {
 }
 
 h1 {
-  max-width: 1050px;
-  margin-bottom: 26px;
-  font-size: clamp(58px, 9.2vw, 148px);
+  max-width: 820px;
+  margin-bottom: 22px;
+  font-size: clamp(46px, 6.4vw, 98px);
   font-weight: 760;
-  line-height: 0.89;
+  line-height: 0.94;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .hero-intro {
-  max-width: 560px;
+  max-width: 520px;
   color: var(--muted);
-  font-size: clamp(17px, 1.55vw, 21px);
+  font-size: clamp(16px, 1.25vw, 19px);
   line-height: 1.55;
 }
 
@@ -187,7 +187,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 32px 0 42px;
+  margin: 26px 0 32px;
 }
 
 .button {
@@ -238,13 +238,13 @@ h1 {
 
 .hero-media {
   position: relative;
-  min-height: 560px;
+  min-height: 470px;
 }
 
 .hero-media img {
   width: 100%;
-  height: min(62vh, 650px);
-  min-height: 520px;
+  height: min(54vh, 540px);
+  min-height: 430px;
   object-fit: cover;
   filter: saturate(0.86) contrast(1.08) brightness(0.78);
 }
@@ -253,15 +253,15 @@ h1 {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: min(245px, 62%);
-  padding: 28px;
+  width: min(210px, 58%);
+  padding: 22px;
   background: var(--green);
   color: #080a09;
 }
 
 .radius-card strong {
   display: block;
-  font-size: 58px;
+  font-size: 46px;
   line-height: 0.9;
   text-transform: uppercase;
 }
@@ -281,8 +281,8 @@ h1 {
 }
 
 .metrics div {
-  min-height: 166px;
-  padding: 30px clamp(18px, 4vw, 54px);
+  min-height: 132px;
+  padding: 24px clamp(18px, 3.2vw, 42px);
   border-right: 1px solid var(--line);
 }
 
@@ -293,7 +293,7 @@ h1 {
 .metrics strong {
   display: block;
   color: var(--green);
-  font-size: clamp(34px, 4.4vw, 66px);
+  font-size: clamp(28px, 3.4vw, 48px);
   font-weight: 720;
   line-height: 0.95;
   text-transform: uppercase;
@@ -302,7 +302,7 @@ h1 {
 .metrics span {
   display: block;
   max-width: 160px;
-  margin-top: 18px;
+  margin-top: 14px;
   color: var(--muted);
   font-size: 13px;
   line-height: 1.35;
@@ -315,7 +315,7 @@ h1 {
 .safety,
 .contact,
 .footer {
-  padding: clamp(58px, 8vw, 112px) clamp(18px, 4vw, 54px);
+  padding: clamp(46px, 6vw, 82px) clamp(18px, 3.2vw, 42px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -331,11 +331,11 @@ h1 {
 .case-copy h2,
 .safety h2,
 .contact h2 {
-  max-width: 920px;
+  max-width: 760px;
   margin-bottom: 0;
-  font-size: clamp(38px, 5.8vw, 92px);
+  font-size: clamp(32px, 4.35vw, 66px);
   font-weight: 720;
-  line-height: 0.98;
+  line-height: 1.03;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -345,18 +345,18 @@ h1 {
 .case-copy p,
 .safety p,
 .contact-details p {
-  max-width: 560px;
+  max-width: 520px;
   color: var(--muted);
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .section-head {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.66fr);
-  gap: clamp(30px, 6vw, 96px);
+  gap: clamp(28px, 5vw, 72px);
   align-items: start;
-  margin-bottom: clamp(34px, 6vw, 74px);
+  margin-bottom: clamp(30px, 4.8vw, 56px);
 }
 
 .section-head .section-label {
@@ -372,8 +372,8 @@ h1 {
 }
 
 .service-card {
-  min-height: 305px;
-  padding: clamp(22px, 3vw, 34px);
+  min-height: 245px;
+  padding: clamp(20px, 2.4vw, 28px);
   background: rgba(255, 255, 255, 0.015);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -391,8 +391,8 @@ h1 {
 .process-grid h3,
 .quote-form h3,
 .footer h3 {
-  margin: 46px 0 14px;
-  font-size: 25px;
+  margin: 34px 0 12px;
+  font-size: 21px;
   font-weight: 680;
   line-height: 1.08;
   text-transform: uppercase;
@@ -422,7 +422,7 @@ h1 {
 .wide-image {
   grid-column: span 12;
   width: 100%;
-  height: clamp(280px, 42vw, 560px);
+  height: clamp(240px, 34vw, 430px);
   object-fit: cover;
   filter: saturate(0.85) contrast(1.06) brightness(0.8);
 }
@@ -450,7 +450,7 @@ h1 {
 .case-study {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(360px, 1.12fr);
-  gap: 18px clamp(28px, 5vw, 70px);
+  gap: 18px clamp(28px, 4.4vw, 58px);
   background: var(--panel);
 }
 
@@ -464,7 +464,7 @@ h1 {
 
 .case-media img {
   width: 100%;
-  min-height: 420px;
+  min-height: 330px;
   object-fit: cover;
   filter: saturate(0.78) contrast(1.1) brightness(0.78);
 }
@@ -508,8 +508,8 @@ dd {
 }
 
 .process-grid article {
-  min-height: 330px;
-  padding: 30px;
+  min-height: 270px;
+  padding: 26px;
   border-right: 1px solid var(--line);
 }
 
@@ -518,10 +518,10 @@ dd {
 }
 
 blockquote {
-  max-width: 980px;
-  margin: clamp(48px, 6vw, 78px) 0 0 auto;
+  max-width: 820px;
+  margin: clamp(38px, 4.8vw, 60px) 0 0 auto;
   color: var(--text);
-  font-size: clamp(28px, 4vw, 58px);
+  font-size: clamp(24px, 3vw, 42px);
   font-weight: 650;
   line-height: 1.08;
 }
@@ -557,12 +557,12 @@ blockquote {
 
 .tag-stack {
   position: relative;
-  min-height: 510px;
+  min-height: 420px;
 }
 
 .tag-stack img {
   position: absolute;
-  max-height: 500px;
+  max-height: 405px;
   width: auto;
   filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.45));
 }
